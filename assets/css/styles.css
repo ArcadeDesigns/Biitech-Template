@@ -1,0 +1,157 @@
+.bs-icon {
+  --bs-icon-size: .75rem;
+  display: flex;
+  flex-shrink: 0;
+  justify-content: center;
+  align-items: center;
+  font-size: var(--bs-icon-size);
+  width: calc(var(--bs-icon-size) * 2);
+  height: calc(var(--bs-icon-size) * 2);
+  color: var(--bs-primary);
+}
+
+.bs-icon-xs {
+  --bs-icon-size: 1rem;
+  width: calc(var(--bs-icon-size) * 1.5);
+  height: calc(var(--bs-icon-size) * 1.5);
+}
+
+.bs-icon-sm {
+  --bs-icon-size: 1rem;
+}
+
+.bs-icon-md {
+  --bs-icon-size: 1.5rem;
+}
+
+.bs-icon-lg {
+  --bs-icon-size: 2rem;
+}
+
+.bs-icon-xl {
+  --bs-icon-size: 2.5rem;
+}
+
+.bs-icon.bs-icon-primary {
+  color: var(--bs-white);
+  background: var(--bs-primary);
+}
+
+.bs-icon.bs-icon-primary-light {
+  color: var(--bs-primary);
+  background: rgba(var(--bs-primary-rgb), .2);
+}
+
+.bs-icon.bs-icon-semi-white {
+  color: var(--bs-primary);
+  background: rgba(255, 255, 255, .5);
+}
+
+.bs-icon.bs-icon-rounded {
+  border-radius: .5rem;
+}
+
+.bs-icon.bs-icon-circle {
+  border-radius: 50%;
+}
+
+#hero-section {
+  min-height: 75dvh;
+}
+
+.grid-dot-background {
+  background-position: center;
+  background-image: radial-gradient(var(--bs-dark) 1px, transparent 0);
+  background-size: 20px 20px;
+  background-color: var(--bs-light);
+}
+
+#benefits-section {
+  min-height: 20dvh;
+  background-position: center;
+  border-top: 2px solid black;
+  border-bottom: 2px solid black;
+}
+
+.wrapper {
+  max-width: 1200px;
+  display: flex;
+  justify-content: center;
+}
+
+section {
+  justify-content: center;
+  display: flex;
+}
+
+@media (max-width: 300px) {
+  .courses-card {
+    min-height: 21rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #eee;
+    border: 2px solid black;
+    box-shadow: 4px 6px black;
+    position: relative;
+    transition: transform 250ms, box-shadow 250ms;
+  }
+}
+
+.courses-card {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: var(--bs-white);
+  border: 2px solid black;
+  box-shadow: 4px 6px var(--bs-light);
+  position: relative;
+  transition: transform 250ms, box-shadow 250ms;
+}
+
+#contact-section {
+  background-color: var(--bs-primary);
+}
+
+.courses-card:hover {
+  transform: translate(-4px, -4px);
+  box-shadow: 8px 10px var(--bs-light);
+}
+
+#courses-section {
+  background-color: var(--bs-dark);
+  color: white;
+}
+
+#hero-content {
+  width: 100%;
+  max-width: 30rem;
+  background-color: var(--bs-light);
+}
+
+.benefits-card:hover {
+  box-shadow: 4px 6px black;
+  transform: translate(-2px, -2px);
+}
+
+.benefits-card {
+  border-radius: 1rem;
+  background-color: var(--bs-white);
+  transition: box-shadow 250ms, transform 250ms;
+}
+
+#why-us-img {
+  min-height: 300px;
+  border-radius: 2rem 0 0 2rem;
+  border-right: 2px solid black;
+  object-fit: cover;
+}
+
+@media (max-width: 767px) {
+  #why-us-img {
+    border-radius: 2rem 2rem 0 0rem;
+    border-bottom: 2px solid black;
+  }
+}
+
