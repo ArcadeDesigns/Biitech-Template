@@ -146,29 +146,3 @@
   --bs-btn-disabled-border-color: #F9F5F0;
 }
 
-.btn {
-  background-color: var(--bs-success);
-  cursor: pointer;
-  color: var(--bs-light);
-  border: 2px solid black;
-  border-radius: 1rem;
-  position: relative;
-  transition: box-shadow 250ms, transform 250ms;
-  box-shadow: 3px 4px black;
-}
-
-.btn:hover {
-  box-shadow: 2px 3px black;
-  border: 2px solid black;
-  transform: translate(2px, 2px);
-  color: white;
-  background-color: var(--bs-success);
-}
-
-.btn:active {
-  box-shadow: 2px 3px black;
-  border: 2px solid black;
-  transform: translate(2px, 2px);
-  color: white;
-  background-color: var(--bs-success-text-emphasis);
-}
